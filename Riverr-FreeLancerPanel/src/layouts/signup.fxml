@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="window" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="604.0" prefWidth="447.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.signupController">
+   <children>
+      <ImageView fitHeight="118.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <image>
+            <Image url="@Logos/LOGO-ROCKY.PNG" />
+         </image>
+      </ImageView>
+      <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SIGN UP FORM">
+         <VBox.margin>
+            <Insets bottom="40.0" />
+         </VBox.margin>
+      </Text>
+      <Label text="First Name*" />
+      <TextField fx:id="firstName" promptText="Enter First Name">
+         <VBox.margin>
+            <Insets bottom="10.0" left="40.0" right="40.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Last Name" />
+      <TextField fx:id="lastName" promptText="Enter Last Name">
+         <VBox.margin>
+            <Insets bottom="10.0" left="40.0" right="40.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Contact Number" />
+      <TextField fx:id="contactNum" promptText="Enter Contact Number">
+         <VBox.margin>
+            <Insets bottom="10.0" left="40.0" right="40.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Email Address*" />
+      <TextField fx:id="emailAddress" promptText="Enter EmailAddress">
+         <VBox.margin>
+            <Insets bottom="10.0" left="40.0" right="40.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="User Name*" />
+      <TextField fx:id="userName" promptText="Enter Username">
+         <VBox.margin>
+            <Insets bottom="10.0" left="40.0" right="40.0" />
+         </VBox.margin>
+      </TextField>
+      <Label text="Password*" />
+      <PasswordField fx:id="password" promptText="Enter Password">
+         <VBox.margin>
+            <Insets bottom="10.0" left="40.0" right="40.0" />
+         </VBox.margin>
+      </PasswordField>
+      <Label text="Confirm Password*" />
+      <PasswordField fx:id="confirmPassword" promptText="Re-Enter Password">
+         <VBox.margin>
+            <Insets bottom="10.0" left="40.0" right="40.0" />
+         </VBox.margin>
+      </PasswordField>
+      <Label onMouseReleased="#loginAccount" text="Already have an account?" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#signup" text="Signup" />
+   </children>
+</VBox>
